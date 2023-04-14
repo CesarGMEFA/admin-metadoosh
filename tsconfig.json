@@ -15,9 +15,15 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@pages/*": ["./src/pages/*"],
+      "@components/*": ["./src/components/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@layout/*": ["./src/layout/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@service/*": ["./src/service/*"],
+      "@lib/*": ["./src/lib/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/service/supabaseClient.js", "src/lib/dropdownMultiSelect.js", "src/lib/hook/useAuth.js", "src/pages/login/index.jsx"],
   "exclude": ["node_modules"]
 }
